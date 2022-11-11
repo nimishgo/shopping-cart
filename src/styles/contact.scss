@@ -1,0 +1,30 @@
+@use "../global.scss" as *;
+
+.contactContainer {
+  width: 100%;
+  height: 100%;
+
+  @include flexCentre(column);
+
+
+  .cardBlock {
+    border: 2px solid #fff;
+    padding: 5vh;
+    border-radius: 5em;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  
+    a {
+      &:hover {
+        color: #aff;
+      }
+    }
+  
+  }
+
+  .address {
+    font-size: 32px;
+  }
+
+}
