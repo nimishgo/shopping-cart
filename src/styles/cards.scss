@@ -1,0 +1,72 @@
+@use '../global.scss' as *;
+
+.cardsName {
+
+  box-sizing: content-box;
+  height: auto;
+  display: flex;
+
+  .products {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+    .imgContainer {
+
+      background-color: #fff;
+      height: 25vh;
+      width: 100%;
+
+      @include flexCentre(row);
+
+      img {
+        aspect-ratio: 3/4;
+        height: 20vh;
+    }
+  }
+  .title {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+
+    .price {
+            margin-top: auto;
+            font-size: 20px;
+            justify-self: flex-end;
+          }
+    
+    .incdec {
+            display: flex;
+            width: 90%;
+            gap: 10%;
+            justify-content: space-around;
+            align-items: center;
+    }
+
+    .item-control {
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      margin-top: auto;
+      width: 100%;
+      button {
+        height: 2em;
+        width: 100%;
+      
+        flex-grow: 1;
+      
+        &:hover {
+          width: 120%;
+          height: 2.5em;
+        }
+      }
+      
+    }
+  }
+
+}
