@@ -68,7 +68,8 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <>
       <Header cart={cart} />
       <div className="main">
         <Routes>
@@ -88,7 +89,8 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </BrowserRouter>
+    </>
+    // </BrowserRouter>
   );
 }
 
