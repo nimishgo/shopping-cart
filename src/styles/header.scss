@@ -37,6 +37,12 @@ $textColor : #fff;
   justify-content: space-between;
   background-color: #222;
   z-index: 100;
+
+
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
+
   a {
     text-decoration: none !important;
     display: flex;
@@ -49,7 +55,7 @@ $textColor : #fff;
   }
 
   nav {
-    padding: 1vh 100px;
+    padding: 1vh;
     ul {
       display: flex;
       width: 40vw;
@@ -60,6 +66,11 @@ $textColor : #fff;
         font-size: 2vh;
         font-weight: 900;
         list-style: none;
+
+        @media (max-width: 600px) {
+          font-size: 1.25vh;
+        }
+
         a {
           color: $textColor;
           text-decoration: none;
@@ -68,6 +79,8 @@ $textColor : #fff;
           }
         }
       }
+
+ 
     }
   }
 }
